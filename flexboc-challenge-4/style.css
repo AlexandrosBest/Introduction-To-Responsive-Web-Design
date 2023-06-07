@@ -9,6 +9,8 @@ body {
 }
 
 img {
+    margin: 0;
+    display: block;
     max-width: 100%;
 }
 
@@ -31,6 +33,8 @@ img {
     font-family: 'Playfair Display', serif;
     font-weight: 900;
     font-size: 36px;
+    margin-top: 0;
+    color: #824936;
 }
 
 .font-style-4 {
@@ -39,24 +43,53 @@ img {
     font-size: 21px;
 }
 
+.font-style-5 {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 21px;
+    color: white;
+}
+
+.font-style-6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 36px;
+    margin-top: 0;
+    color: #F3EED9;
+}
+
 .container {
     max-width: 1128px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .section-1 {
+    height: 660px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #F3EED9;
 }
 
+.section-1, p, h1 {
+    margin: 0;
+}
+
 .section-2 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     background-color: white;
 }
 
 .section-3 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     background-color: #222C2A;
 }
 
 .section-4 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     background-color: #824936;
 }
 
@@ -64,8 +97,14 @@ img {
 .row {
     display: flex;
     justify-content: space-between;
+
 }
 
 .col {
-    
+    width: 100%;
+    flex-direction: column;
+}
+
+.col + .col {
+    margin-left: 30px;
 }
