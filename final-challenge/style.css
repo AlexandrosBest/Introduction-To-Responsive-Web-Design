@@ -10,17 +10,106 @@ img {
 body {
     margin: 0;
     padding: 0;
-    font-size: 1.3rem;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Oswald', sans-serif;
+    font-size: 1.3125rem;
+    line-height: 1.6;
+    font-family: 'Montserrat';
+    background-color: white;
+    color: #222C2A;
 }
 
 .accent-text {
     color: #A59678;
 }
 
-ul, li {
-   
+.section-2-heading {
+    color: #A59678;
+    font-family: 'Oswald';
+    font-size: 30px;
+}
+
+.section-3-heading {
+    color: #A59678;
+    font-family: 'Oswald';
+    font-size: 36px;
+}
+
+header {
+    background-color: #2E323F;
+    padding: 1em 0;
+}
+
+.section-1 {
+    background-color: #3B4050;
+    color: #fff;
+    padding: 4em 0;
+}
+
+.section-1 h1 {
+    font-family: 'Oswald';
+    font-size: 90px;
+    margin-top: 0;
+}
+
+.section-1 p {
+    font-family: 'Montserrat';
+    font-size: 24px;
+}
+
+.section-2 {
+    background-color: #eeeeee;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    text-align: center;
+}
+
+.section-2 p {
+    font-size: 18px;
+}
+
+.section-3 {
+    background-color: #fff;
+    padding-bottom: 4em;
+}
+
+.section-4 {
+    background-color: #3B4050;
+    color: #fff;
+    padding: 4em 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+.section-4 h2 {
+    font-family: 'Oswald';
+    font-size: 21px;
+    color: #A59678;
+    padding-top: 20px;
+}
+
+.section-4 h1 {
+    font-family: 'Oswald';
+    font-weight: 900;
+    text-align: center;
+}
+
+.sidebar {
+    text-align: center;
+    background-color: #3B4050;
+    color: #fff;
+    padding: 2em;
+    margin-top: 2em;
+    font-size: 18px;
+}
+
+.sidebar h2 {
+    font-family: 'Oswald';
+    font-size: 30px;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 nav {
@@ -43,30 +132,28 @@ nav {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
+    font-family: 'Oswald';
+    font-size: 18px
 }
 
-.container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-header {
-    background-color: #2E323F;
-}
-
-.section-1 {
-    background-color: ;
-}
-
-.sidebar {
-    background-color: #3B4050;
+.btn {
     color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    font-size: 24px;
+    display: inline-block;
+    background-color: #A59678;
+    border-radius: 20px;
+    padding: 6px 32px;
 }
+
+
 
 @media screen {
     /*.row {
         display: flex;
         justify-content: space-between;
+            font-family: 'Oswald';
     } */
 }
