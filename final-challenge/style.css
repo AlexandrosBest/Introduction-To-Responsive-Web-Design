@@ -12,6 +12,7 @@ img {
     max-width: 100%;
     margin-top: 2em;
     margin-bottom: 2em;
+
 }
 
 body {
@@ -22,6 +23,12 @@ body {
     font-family: 'Montserrat';
     background-color: white;
     color: #222C2A;
+}
+
+h1, h2{
+    line-height: 1.4;
+    margin-bottom: 0.75em;
+
 }
 
 .accent-text {
@@ -59,6 +66,7 @@ section {
     font-family: 'Oswald';
     font-size: 48px;
     margin-top: 0;
+    margin-bottom: 0;
     line-height: 1.2;
 }
 
@@ -146,6 +154,10 @@ nav {
     font-size: 18px
 }
 
+.--primary-content {
+    padding-top: 1em;
+}
+
 .btn {
     color: #fff;
     text-decoration: none;
@@ -154,24 +166,87 @@ nav {
     font-size: 24px;
     display: inline-block;
     background-color: #A59678;
-    border-radius: 20px;
+    border-radius: 2em;
     padding: 6px 32px;
 }
 
+.btn-signup {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    background-color: #A59678;
+    border-radius: 2em;
+    padding: 4px 32px;
+}
 
+.text {
+    padding-bottom: 1em;
+}
+
+.col {
+    padding-bottom: 3em;
+}
 
 @media (min-width: 700px) {
 
-    .row{
+    .row {
         display: flex;
         justify-content: space-between;
+        gap: 3em;
+    }
+
+    .col {
+        padding-bottom: 3em;
     }
 
     .col + .col {
         margin-left: 2em;
     }
+
+    .left-col {
+        max-width: 60%;
+    }
+
 }
 
 @media (min-width: 1000px) {
-    
+    .row-2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .row-3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 3em;
+    }
+
+    .col {
+        padding-bottom: 0
+    }
+
+    .section-1 h1 {
+        font-family: 'Oswald';
+        font-size: 90px;
+        margin-top: 0;
+        line-height: 1.2;
+    }
+
+    .col-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: start;
+    }
+
+    .col-footer {
+        max-width: 40%;
+    }
+
+    .footer {
+        text-align: left;
+    }
 }
