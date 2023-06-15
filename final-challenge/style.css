@@ -50,6 +50,7 @@ h1, h2{
 header {
     background-color: #2E323F;
     padding: 1em 0;
+    text-align: center;
 }
 
 section {
@@ -128,6 +129,7 @@ section {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
 }
 
 nav {
@@ -153,6 +155,66 @@ nav {
     font-family: 'Oswald';
     font-size: 18px
 }
+
+.nav-toggle {
+    cursor: pointer;
+    border: 0;
+    width: 3em;
+    height: 3em;
+    padding: 0em;
+    border-radius: 50%;
+    background: #072A2D;
+    color: white;
+    transition: opacity 250ms ease;
+    
+    position: absolute;
+    left: 0;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+    opacity: .75;
+}
+
+.hamburger {
+    width: 50%;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    width: 100%;
+}
+
+.hamburger::before {
+    transform: translateY(-6px);
+}
+
+.hamburger::after {
+    transform: translateY(3px);
+}
+
+.nav {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+}
+
+.nav--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+} 
 
 .--primary-content {
     padding-top: 1em;
@@ -188,7 +250,24 @@ nav {
     padding-bottom: 3em;
 }
 
+.logo {
+    height: 30px;
+}
+
 @media (min-width: 700px) {
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav {
+        visibility: visible;
+        display: flex;
+        height: auto;
+        align-items: center;
+        position: relative;
+        justify-content: end;
+    }
 
     .row {
         display: flex;
@@ -207,6 +286,20 @@ nav {
     .left-col {
         max-width: 60%;
     }
+
+    .nav-list {
+        display: flex;
+        margin: 0;
+     }
+ 
+     .nav-item {
+         margin: 0 0 0 1.5em;
+     }
+
+     .primary-content {
+        width: 62%;
+    }
+
 
 }
 
