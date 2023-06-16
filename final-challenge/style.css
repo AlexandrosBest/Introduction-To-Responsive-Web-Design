@@ -239,7 +239,7 @@ nav {
     font-family: 'Oswald';
     background-color: #A59678;
     border-radius: 2em;
-    padding: 4px 32px;
+    padding: 4px 16px;
 }
 
 .text {
@@ -252,6 +252,11 @@ nav {
 
 .logo {
     height: 30px;
+}
+
+.logo-img {
+    margin-top: 0em;
+    margin-bottom: 0em;
 }
 
 @media (min-width: 700px) {
@@ -283,21 +288,40 @@ nav {
         margin-left: 2em;
     }
 
-    .left-col {
-        max-width: 60%;
-    }
-
     .nav-list {
         display: flex;
         margin: 0;
      }
  
      .nav-item {
-         margin: 0 0 0 1.5em;
+         margin: 0 0 0 1.20em;
      }
 
      .primary-content {
         width: 62%;
+    }
+
+    .--primary-content {
+        padding-top: 0em;
+        padding-left: 1em;
+    }
+
+    .logo {
+        max-width: 40%;
+        display: inline-block;
+        text-align: left;
+        padding-left: 1em;
+    }
+
+    .logo-img {
+        margin-top: 0em;
+        margin-bottom: 0em;
+    }
+
+    .sidebar-primary {
+        display: flex;
+        justify-content: space-between;
+        gap: 3em;
     }
 
 
@@ -342,4 +366,20 @@ nav {
     .footer {
         text-align: left;
     }
+    
+    .left-col {
+        max-width: 60%;
+    }
+
+    .sidebar-primary {
+        flex-direction: column;
+        max-width: 40%;
+    }
+
+    .row-section-3 {
+        display: flex;
+        justify-content: space-between;
+        gap: 3em;
+    }
+
 }
